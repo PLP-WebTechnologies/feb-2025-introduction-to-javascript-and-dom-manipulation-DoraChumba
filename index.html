@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript & DOM Manipulation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    .highlight {
+      background-color: yellow;
+      padding: 5px;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to JavaScript DOM Practice</h1>
+  </header>
+
+  <main>
+    <section>
+      <p id="demo">Original text.</p>
+      <button onclick="changeText()">Change Text</button>
+    </section>
+
+    <section>
+      <p>Click the button to change the style of the paragraph above.</p>
+      <button onclick="changeStyle()">Highlight Text</button>
+    </section>
+
+    <section>
+      <div id="output"></div>
+      <button onclick="addElement()">Add New Element</button>
+      <button onclick="removeElement()">Remove Last Element</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My JS DOM Project</p>
+  </footer>
+
+  <!-- Linking external JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
